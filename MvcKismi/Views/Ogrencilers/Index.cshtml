@@ -1,0 +1,65 @@
+﻿@model IEnumerable<MvcKismi.Models.MvcOgrenciModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+<p>
+   <a href="@Url.Action("EkleVeyaDuzenle","Ogrencilers")" class="btn btn-primary mt-3 ">Yeni Ogrenci Ekle</a>
+</p>
+<table class="table  table-bordered table-dark ">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Soyad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bolum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GirisYili)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Soyad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bolum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GirisYili)
+            </td>
+            <td>
+                <a href="@Url.Action("EkleVeyaDuzenle","Ogrencilers", new {id= item.OgrenciId})" class="btn btn-primary">Duzenle</a>
+
+
+                <a onclick="Delete(@item.OgrenciId)" class="btn btn-primary text-white">Sil</a>
+            </td>
+        </tr>
+    }
+
+</table>
+<script>
+    function Delete(id) {
+
+        alertify.confirm("Ogrenci Silme İslemi", "Silmek İstediğinize Emin Misiniz?", function () {
+            window.location.href = '@Url.Action("Delete","Ogrencilers")/' + id;
+
+        }, null
+        )
+    }
+
+
+
+</script>

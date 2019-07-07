@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiKismi", "WebApiKismi\WebApiKismi.csproj", "{63D5B326-36F3-49BF-878F-6A15FAFF291B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcKismi", "MvcKismi\MvcKismi.csproj", "{22969F02-BCBB-49CA-85C3-B6A36A60226E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63D5B326-36F3-49BF-878F-6A15FAFF291B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D5B326-36F3-49BF-878F-6A15FAFF291B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D5B326-36F3-49BF-878F-6A15FAFF291B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D5B326-36F3-49BF-878F-6A15FAFF291B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22969F02-BCBB-49CA-85C3-B6A36A60226E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22969F02-BCBB-49CA-85C3-B6A36A60226E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22969F02-BCBB-49CA-85C3-B6A36A60226E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22969F02-BCBB-49CA-85C3-B6A36A60226E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CD45D47-8A69-417E-8EB7-9F04053FB562}
+	EndGlobalSection
+EndGlobal
